@@ -90,7 +90,8 @@ gender.trace_add('write', gender_updated) # 변수의 상황을 추적하면서,
 pattern_frame = LabelFrame(window, text='Pattern List')
 pattern_frame.pack()
 
-pattern_entry = Entry(pattern_frame)
+pattern_var = StringVar()
+pattern_entry = Entry(pattern_frame, textvariable=pattern_var)
 pattern_entry.pack()
 
 def add_pattern(event=None):
