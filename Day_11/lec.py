@@ -97,7 +97,6 @@ pattern_entry.pack()
 def add_pattern(event=None):
     pattern = pattern_entry.get()
     pattern_list.insert(0, pattern)
-    pass
 
 pattern_entry.bind('<Return>', add_pattern)
 
@@ -105,7 +104,10 @@ pattern_list = Listbox(pattern_frame, selectmode=SINGLE, height=4)
 pattern_list.insert(0, 'Python')
 pattern_list.pack(fill=X, expand=True)
 
+def set_pattern(event=None):
+    pass
 
+pattern_list.bind('<<ListboxSelect>>', set_pattern)
 
 
 
