@@ -1,0 +1,32 @@
+  File "E:\Python\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Python\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\alfj2\.vscode\extensions\ms-python.python-2023.6.0\pythonFiles\lib\python\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+  File "c:\Users\alfj2\.vscode\extensions\ms-python.python-2023.6.0\pythonFiles\lib\python\debugpy/..\debugpy\server\cli.py", line 430, in main
+    run()
+  File "c:\Users\alfj2\.vscode\extensions\ms-python.python-2023.6.0\pythonFiles\lib\python\debugpy/..\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "c:\Users\alfj2\.vscode\extensions\ms-python.python-2023.6.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "c:\Users\alfj2\.vscode\extensions\ms-python.python-2023.6.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "c:\Users\alfj2\.vscode\extensions\ms-python.python-2023.6.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "E:\3_1\Script\Day_10\lec.py", line 53, in <module>
+    ham()
+  File "E:\3_1\Script\Day_10\lec.py", line 51, in ham
+    spam()
+  File "E:\3_1\Script\Day_10\lec.py", line 48, in spam
+    bacon()
+  File "E:\3_1\Script\Day_10\lec.py", line 44, in bacon
+    for line in traceback.format_stack():
+  File "e:\3_1\Script\Day_10\lec.py", line 53, in <module>
+    ham()
+  File "e:\3_1\Script\Day_10\lec.py", line 51, in ham
+    spam()
+  File "e:\3_1\Script\Day_10\lec.py", line 48, in spam
+    bacon()
+  File "e:\3_1\Script\Day_10\lec.py", line 44, in bacon
+    for line in traceback.format_stack():
