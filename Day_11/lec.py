@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.ttk import *
-from customtkinter import *
 
+from customtkinter import *
 Tk = CTk
 Frame = CTkFrame
 Label = CTkLabel
@@ -89,6 +89,16 @@ gender.trace_add('write', gender_updated) # 변수의 상황을 추적하면서,
 
 pattern_frame = LabelFrame(window, text='Pattern List')
 pattern_frame.pack()
+
+pattern_entry = Entry(pattern_frame)
+pattern_entry.pack()
+
+def add_pattern(event=None):
+    pattern = pattern_entry.get()
+    pattern_list.insert(0, pattern)
+    pass
+
+pattern_entry.bind('<Return>', add_pattern)
 
 pattern_list = Listbox(pattern_frame, selectmode=SINGLE, height=4)
 pattern_list.insert(0, 'Python')
